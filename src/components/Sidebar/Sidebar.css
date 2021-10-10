@@ -1,0 +1,137 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 90px;
+  flex: 0.18;
+  border-radius: 10px;
+  text-align: center;
+  height: fit-content;
+  margin-top: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid lightgrey;
+  /* border-bottom: 0; */
+  border-radius: 10px;
+  width: 100%;
+}
+
+.sidebar__topUser {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  align-items: center;
+}
+.sidebar__topUser > img {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+.sidebar__topUser > h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.sidebar__topUser > h4 {
+  font-weight: 400;
+  font-size: 13px;
+}
+.sidebar__top > hr {
+  margin-top: 10px;
+  width: 90%;
+  display: flex;
+}
+
+.sidebar__profile {
+  margin-top: -40px;
+  width: 70px !important;
+  height: 70px !important;
+  border: 2px solid black;
+}
+
+.sidebar__stats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+}
+
+.sidebar__statDetail {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.sidebar__bottom {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.sidebar__recentItem {
+  display: flex;
+  font-size: 13px;
+  color: gray;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.sidebar__recentItem:hover {
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.sidebar__hash {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.nav-toggler {
+  transform: translateY(0);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  align-items: center;
+  position: sticky;
+  top: 10%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    transform: translateY(-120%);
+    width: 0px;
+    flex: 0;
+  }
+}
+
+/* @media screen and (max-width: 1200px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100%);
+    width: 100%;
+    flex: 0.2;
+  }
+
+  .sidebar__bottom {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100%);
+  }
+} */

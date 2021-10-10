@@ -1,39 +1,50 @@
-.App {
-  text-align: center;
+.app {
+  max-width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.app__body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  max-width: 100vw;
+  flex: 1;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+/* .sidebar__hamburgerMenu{
+    flex: 0.1;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.widgets__hamburgerMenu{
+    flex: 0.1;
+
+} */
+
+@media screen and (min-width: 1000px) {
+  .sidebar__hamburgerMenu {
+    display: none;
   }
-  50% {
-    transform: translateY(10px);
+
+  .widgets__hamburgerMenu {
+    display: none;
   }
-  100% {
-    transform: translateY(0px);
+}
+@media screen and (max-width: 1000px) {
+  .app {
+    max-width: 100vw;
+    flex: 1;
+  }
+  .app__body {
+    max-width: 100vw;
+    flex: 1;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sidebar__hamburgerMenu {
+    display: none;
+  }
+
+  .widgets__hamburgerMenu {
+    display: none;
   }
 }
